@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commentator", "Commentator.csproj", "{4B600EAC-0B63-48B3-A504-E07D59357FCF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "..\..\Utils\src\Utils\Utils.csproj", "{A007C198-ECAF-4B5F-923C-3D05A91D9A79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B600EAC-0B63-48B3-A504-E07D59357FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B600EAC-0B63-48B3-A504-E07D59357FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B600EAC-0B63-48B3-A504-E07D59357FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B600EAC-0B63-48B3-A504-E07D59357FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A007C198-ECAF-4B5F-923C-3D05A91D9A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A007C198-ECAF-4B5F-923C-3D05A91D9A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A007C198-ECAF-4B5F-923C-3D05A91D9A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A007C198-ECAF-4B5F-923C-3D05A91D9A79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {879C5319-6442-496B-AF9C-73C2DA28C704}
+	EndGlobalSection
+EndGlobal
