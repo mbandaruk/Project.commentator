@@ -1,3 +1,4 @@
+using System.Reflection.Metadata.Ecma335;
 using Utils.IO;
 
 namespace Commentator;
@@ -75,11 +76,16 @@ public partial class Form1 : Form
 		var basicName = fileInfo.FullName;
 		var newName = basicName + ".new";
 
-		var comment = fileInfo.Extension switch
+		var comment = string.Empty;
+		switch (fileInfo.Extension)
 		{
-			".cs" => "//",
-			".vb" => "'",
-			_ => throw new NotImplementedException()
+			case ".cs":
+				comment = "//";
+				break;
+			case ".vb":
+				comment = "'";
+				break;
+			default: return;
 		};
 
 		using (var reader = new StreamReader(basicName))
