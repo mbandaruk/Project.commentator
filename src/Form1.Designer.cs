@@ -37,7 +37,7 @@ partial class Form1
 		// 
 		// tbRoot
 		// 
-		tbRoot.Location = new Point(61, 51);
+		tbRoot.Location = new Point(12, 33);
 		tbRoot.Name = "tbRoot";
 		tbRoot.Size = new Size(490, 23);
 		tbRoot.TabIndex = 0;
@@ -45,7 +45,7 @@ partial class Form1
 		// label1
 		// 
 		label1.AutoSize = true;
-		label1.Location = new Point(61, 33);
+		label1.Location = new Point(12, 15);
 		label1.Name = "label1";
 		label1.Size = new Size(31, 15);
 		label1.TabIndex = 1;
@@ -53,7 +53,7 @@ partial class Form1
 		// 
 		// button1
 		// 
-		button1.Location = new Point(61, 93);
+		button1.Location = new Point(12, 90);
 		button1.Name = "button1";
 		button1.Size = new Size(75, 23);
 		button1.TabIndex = 2;
@@ -63,15 +63,18 @@ partial class Form1
 		// 
 		// tbList
 		// 
-		tbList.Location = new Point(61, 137);
+		tbList.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+		tbList.Font = new Font("Courier New", 9F, FontStyle.Regular, GraphicsUnit.Point);
+		tbList.Location = new Point(12, 119);
 		tbList.Multiline = true;
 		tbList.Name = "tbList";
-		tbList.Size = new Size(511, 137);
+		tbList.ScrollBars = ScrollBars.Vertical;
+		tbList.Size = new Size(782, 319);
 		tbList.TabIndex = 3;
 		// 
 		// button2
 		// 
-		button2.Location = new Point(182, 93);
+		button2.Location = new Point(133, 90);
 		button2.Name = "button2";
 		button2.Size = new Size(75, 23);
 		button2.TabIndex = 4;
@@ -83,7 +86,7 @@ partial class Form1
 		// 
 		AutoScaleDimensions = new SizeF(7F, 15F);
 		AutoScaleMode = AutoScaleMode.Font;
-		ClientSize = new Size(800, 450);
+		ClientSize = new Size(814, 450);
 		Controls.Add(button2);
 		Controls.Add(tbList);
 		Controls.Add(button1);
