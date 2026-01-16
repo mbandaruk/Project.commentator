@@ -32,7 +32,7 @@ public partial class Form1 : Form
 	}
 
 
-	private string[] exludeDirs = new[] { "bin", "obj", ".git", ".vs" };
+	private string[] exludeDirs = new[] { "bin", "obj", ".git", ".vs", "packages" };
 	private string[] includeFiles = new[] { ".cs", ".vb" };
 
 
@@ -47,7 +47,7 @@ public partial class Form1 : Form
 		// TODO check if not exists
 
 
-		if (exludeDirs.Contains(dirInfo.Name))
+		if (exludeDirs.Contains(dirInfo.Name, StringComparer.OrdinalIgnoreCase))
 		{
 			//tbList.Text += dirInfo.FullName + " skip" + Environment.NewLine; //debug
 		}
@@ -68,7 +68,7 @@ public partial class Form1 : Form
 	{
 		// TODO check if not exists
 
-		if (includeFiles.Contains(fileInfo.Extension))
+		if (includeFiles.Contains(fileInfo.Extension, StringComparer.OrdinalIgnoreCase))
 		{
 			tbList.Text += "  " + fileInfo.Name + Environment.NewLine; // TODO delegate
 			action(fileInfo);
