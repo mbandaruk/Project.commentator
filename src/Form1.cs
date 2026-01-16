@@ -16,7 +16,7 @@ public partial class Form1 : Form
 
 	private void button1_Click(object sender, EventArgs e)
 	{
-		tbList.Text = string.Empty;
+		tbList.Text = string.Empty; // TODO delegate
 
 		var root = tbRoot.Text;
 		ProcessDir(root, DoNothing);

@@ -93,7 +93,7 @@ partial class Form1
 		Controls.Add(label1);
 		Controls.Add(tbRoot);
 		Name = "Form1";
-		Text = "Form1";
+		Text = "Commenter";
 		ResumeLayout(false);
 		PerformLayout();
 	}
