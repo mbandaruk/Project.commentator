@@ -32,7 +32,7 @@ public partial class Form1 : Form
 	}
 
 
-	private string[] exludeDirs = new[] { "bin", "obj" };
+	private string[] exludeDirs = new[] { "bin", "obj", ".git", ".vs" };
 	private string[] includeFiles = new[] { ".cs", ".vb" };
 
 
